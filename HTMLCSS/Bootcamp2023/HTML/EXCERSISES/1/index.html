@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Your Course Landing Page</h1>
+    <h1>Your <span>Course</span> Landing Page</h1>
     <form action="/clp">
         <div>
             <label for="title">Course Title</label>
@@ -18,19 +18,20 @@
 
         <div>
             <div><label for="description">Course Description</label></div>
-            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <textarea id="description" name="description" cols="30" rows="10"></textarea>
         </div>
 
         <div><label for="skill"">Skill Level</label>
-            <select name=" skill" id="skill">
-                <option value="Beginner Level">Begginer Level</option>
-                <option value="Intermediate Level">Intermediate Level</option>
-                <option value="Expert Level">Expert Level</option>
+            <select id="skill" name="skill">
+                <option value="b">Begginer Level</option>
+                <option value="i">Intermediate Level</option>
+                <option value="e">Expert Level</option>
+                <option value="a">All Levels</option>
                 </select>
         </div>
 
-        <div><label for="ready">Are you ready to publish the course?</label>
-            <input type="checkbox" required id="ready" name="ready">
+        <div><label for="checkbox">Ready to publish the course?</label>
+            <input type="checkbox" name="checkbox" required id="checkbox">
         </div>
         <button>Submit</button>
     </form>
