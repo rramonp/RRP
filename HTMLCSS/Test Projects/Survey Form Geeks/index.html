@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Survey Form</title>
+</head>
+
+<body>
+    <h1>My Training Survey Form</h1>
+
+    <!-- Creamos Form -->
+    <form action="">
+        <!-- Detalles -->
+        <div class="form-control">
+            <label for="name" id="label name">Name</label>
+            <!-- Input Type Text -->
+            <input type="text" id="name" name="name" placeholder="Enter your name"/>
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">Email</label>
+            <!-- Input Type Email-->
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">Age</label>
+            <!-- Input Type Text -->
+            <input type="text" id="age" name="age" placeholder="Enter your age" />
+        </div>
+        <!-- Dropdown options -->
+        <div class="form-control">
+            <label for="role" id="role">What option describes you best?</label>
+            <select name="role" id="role">
+                <option value="n">Novice</option>
+                <option value="i">Intermediate</option>
+                <option value="a">Advanced</option>
+                <option value="o">Other</option>
+            </select>
+        </div>
+        <!-- Radial options -->
+        <div class="form-control">
+            <label>Would you recommend this survey to a Friend?</label>
+            <!-- Input Type Radio Button -->
+            <label for="recommend-1">
+                <input type="radio" id="recommend-1" name="recommend" value="y">Yes</input>
+            </label>
+            <label for="recommend-2">
+                <input type="radio" id="recommend-2" name="recommend" value="n">No</input>
+            </label>
+            <label for="recommend-3">
+                <input type="radio" id="recommend-3" name="recommend" value="mb">Maybe</input>
+            </label>   
+        </div>     
+        <!-- Checkbox -->
+        <div class="form-control">
+            <label for="languages">What Language Programms do you know?<small>(Check all that apply)</small></label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp" value="python">Python</input>
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp" value="html">Html</input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp" value="css">CSS</input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp" value="js">Javascript</input>
+            </label>    
+        </div>
+        <!-- Comments -->
+        <div class="form-control">
+            <label for="comments">Any comments or suggestions</label>
+                <input type="text" id="comments" name="comments" placeholder="Write here"/>
+        </div>
+    
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+
+</html>
