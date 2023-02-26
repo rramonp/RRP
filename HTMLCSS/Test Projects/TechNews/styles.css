@@ -19,7 +19,7 @@ ul {
     list-style: none;
 }
 .container {
-    width: 75%;
+    width: 70%;
     margin: auto;
 }
 
@@ -66,6 +66,7 @@ ul {
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-size: cover;
+    background-attachment: scroll;
     padding-bottom: 10px;
     margin-top: 55px;
     display: flex;
@@ -75,12 +76,14 @@ ul {
     border: 1px solid white;
 }
 .showcase h2 {
-    font-size: 150%;
+    font-size: 155%;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 .showcase p {
     width: 600px;
     text-align: center;
+    background-color: #03030343;
 }
 .btn {
     cursor: pointer;
