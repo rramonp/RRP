@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <title>My Survey Form</title>
 </head>
 
@@ -18,7 +21,7 @@
         <div class="form-control">
             <label for="name" id="label name">Name</label>
             <!-- Input Type Text -->
-            <input type="text" id="name" name="name" placeholder="Enter your name"/>
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
         </div>
         <div class="form-control">
             <label for="email" id="label-email">Email</label>
@@ -52,11 +55,11 @@
             </label>
             <label for="recommend-3">
                 <input type="radio" id="recommend-3" name="recommend" value="mb">Maybe</input>
-            </label>   
-        </div>     
+            </label>
+        </div>
         <!-- Checkbox -->
         <div class="form-control">
-            <label for="languages">What Language Programms do you know?<small>(Check all that apply)</small></label>
+            <label for="languages">What programming languages do you know?<small> (Check all that apply)</small></label>
             <label for="inp-1">
                 <input type="checkbox" name="inp" value="python">Python</input>
             </label>
@@ -68,14 +71,14 @@
             </label>
             <label for="inp-4">
                 <input type="checkbox" name="inp" value="js">Javascript</input>
-            </label>    
+            </label>
         </div>
         <!-- Comments -->
         <div class="form-control">
             <label for="comments">Any comments or suggestions</label>
-                <input type="text" id="comments" name="comments" placeholder="Write here"/>
+            <input type="text" id="comments" name="comments" placeholder="Write here" />
         </div>
-    
+
         <!-- Multi-line Text Input Control -->
         <button type="submit" value="submit">Submit</button>
     </form>
