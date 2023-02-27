@@ -81,9 +81,11 @@ ul {
     margin-bottom: 5px;
 }
 .showcase p {
-    width: 600px;
     text-align: center;
     background-color: #03030343;
+    max-width: 650px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 .btn {
     cursor: pointer;
