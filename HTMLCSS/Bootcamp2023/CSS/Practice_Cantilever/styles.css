@@ -36,3 +36,25 @@ h2 {
     color: rgb(87, 171, 235);
     text-transform: uppercase;
 }
+.mylist {
+    padding: 0;
+    margin: 0;
+    margin-top:  20px;
+    width: 300px;
+    font-size: 20px;
+    font: 20px 'Space Mono', monospace;
+}
+.mylist li {
+    list-style: upper-roman;
+    list-style-position: inside;
+    text-align: left;
+    line-height: 1.7;
+}
+.mylist a {
+    color: orange;
+    text-decoration: none;
+}
+.mylist a:hover {
+    text-decoration: underline;
+    color: orange;
+}
