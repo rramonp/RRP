@@ -1,0 +1,38 @@
+.container {
+    width: 60%;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #fdf9fd;
+}
+h1 {
+    font-size: 45px;
+    letter-spacing: 0.1px;
+    line-height: 1;
+    font-weight: 550;
+}
+p {
+    font-size: 10px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.artists {
+    text-transform: uppercase;
+    display:inline-block;
+    width: 30%;
+    text-shadow: 0 -2.25px #0c2ffb, 
+                 0 -5.5px #2cfcd2,
+                 0 3.25px #fb203d,
+                 0 6.5px #fefc41; 
+}
+.wordspecial1 {
+    text-decoration: underline;
+    text-decoration-color: gold;
+    color: rgb(87, 171, 235);
+    text-transform: uppercase;
+}
