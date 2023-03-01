@@ -1,0 +1,24 @@
+h1 {
+    margin: -20px;
+}
+.container {
+    border: 1px solid black;
+    background-color: lavenderblush;
+    height: 400px;
+    width: 400px;
+}
+.container h3 {
+    text-align: center;
+    border: 1px solid saddlebrown;
+    width: 150px;
+    margin: auto;
+    line-height: 400px;
+}
+
+p {
+    border: 2px solid green;
+    margin: 20px;
+}
+#p2 {
+    margin-top: 40px;
+}
