@@ -12,7 +12,7 @@ header {
 h1 {
   display: inline-block;
   margin-right: 20px;
-  font-size: 42px;
+  font-size: 35px;
 }
 .link {
   display: inline-block;
@@ -45,8 +45,8 @@ h1 {
   height: 500px;
   width: 100%;
   object-fit: cover;
-  box-shadow: 5px 5px 5px rgba(186, 180, 180, 0.453);
-  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 2px;
 }
 .card img:hover {
   opacity: 0.9;
@@ -74,6 +74,12 @@ h1 {
   display: inline-block;
   margin: 30px 0;
   padding-bottom: 5px;
+  text-decoration: none;
+  color: black;
+}
+.cta:hover {
+  font-weight: bold;
+  border-bottom: 3px solid black;
 }
 .contact {
   margin: 50px 0;
