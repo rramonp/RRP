@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+body {
+  display: flex;
+}
+/*LEFT NAV BAR */
+.navbar {
+  display: inline-block;
+  min-width: 290px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.navbar #reference {
+  height: 100vh;
+}
+.navbar li {
+  padding: 12px;
+  border-right: 1px solid rgba(0, 22, 22, 0.447);
+  border-bottom: 1px solid rgba(0, 22, 22, 0.629);
+}
+.navbar li h2 {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 1.8em;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #4d4e53;
+  margin-left: 20px;
+}
+/* CONTENT */
+.documentation {
+  width: auto;
+  align-items: flex-end;
+  height: 500px;
+  padding: 20px;
+  margin-left: 310px;
+  margin-bottom: 110px;
+  margin-top: 10px;
+  position: absolute;
+  display: inline-block;
+  box-sizing: content-box;
+}
+.documentation section {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.documentation h2 {
+  font-size: 1.8em;
+  margin-left: -20px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.documentation p {
+  color: #4d4e53;
+  line-height: 1.5;
+}
+.documentation h3 {
+  color: #4d4e53;
+  font-weight: 700;
+  margin: 25px 0;
+}
+.documentation .code {
+  background-color: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  color: #4d4e53;
+  border-radius: 5px;
+  text-align: left;
+  white-space: pre-line;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  font-size: 12px;
+  width: 40%;
+}
+.documentation pre {
+  margin-left: -30px;
+  margin-top: -10px;
+}
+.documentation .doculist {
+  color: #4d4e53;
+  margin-left: 20px;
+}
+.documentation .doculist li {
+  margin: 10px 0 0 20px;
+}
