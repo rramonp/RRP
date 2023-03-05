@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  text-align: justify;
+  box-sizing: content-box;
+}
+.header {
+  background-color: red;
+  display: block;
+  height: 100px;
+}
+.sidebar {
+  background-color: rgb(27, 202, 77);
+  display: inline-flex;
+  flex: 1;
+  width: 30%;
+  height: 150px;
+  box-sizing: content-box;
+}
+.content1 {
+  background-color: rgb(9, 180, 232);
+  display: inline-flex;
+  flex-grow: 1;
+  width: 700%;
+  height: 75px;
+  box-sizing: content-box;
+  min-width: 0;
+}
+.content2 {
+  background-color: rgb(240, 17, 225);
+  display: inline;
+  width: 30%;
+}
+.content3 {
+  background-color: rgb(85, 80, 205);
+  display: inline-block;
+  width: 30%;
+}
+.footer {
+  background-color: rgb(241, 114, 16);
+  display: block;
+}
