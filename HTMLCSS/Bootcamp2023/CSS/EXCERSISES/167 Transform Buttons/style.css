@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(
+    to bottom right,
+    rgb(31, 82, 224),
+    rgb(35, 160, 233)
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  background-color: white;
+  color: #401aff;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  border-radius: 0.3rem;
+  padding: 2rem 7rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 1rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.btn1 {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
+.btn1:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.74);
+}
+.btn2 {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.411);
+}
+.btn2:hover {
+  transform: scale(0.95);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
