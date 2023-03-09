@@ -64,7 +64,7 @@ h1 {
 }
 .toggle-wrapper {
   display: flex;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 .toggle-wrapper img {
   height: 40px;
@@ -92,4 +92,32 @@ h1 {
   color: rgb(83, 49, 156);
   padding: 4px 16px;
   border-radius: 20px;
+}
+.sessions {
+  background-color: rgba(166, 174, 216, 0.274);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 150px;
+  margin: 25px 0;
+  padding: 20px 0;
+  margin: 30px 0;
+}
+.sessions p {
+  margin: 0;
+  padding: 0;
+}
+.sessions p:first-of-type {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.9em;
+}
+.sessions p:last-of-type {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 4em;
+  color: rgb(83, 49, 156);
 }
