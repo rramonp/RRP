@@ -188,3 +188,67 @@ h1 {
   margin: 35px 0 0 0;
   padding: 0;
 }
+.billing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0;
+}
+.billing .card {
+  height: 300px;
+  background-color: rgba(250, 247, 255);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 47%;
+  height: 400px;
+}
+#cardtitle {
+  margin-top: 40px;
+}
+.billing .card h2 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1em;
+  color: rgb(83, 49, 156);
+}
+.billing .card .billing-rate {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 54px;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+.billing .card .billing-description {
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+  font-size: 1em;
+  color: rgb(83, 49, 156);
+}
+.billing .card .team {
+  margin: 10px 0;
+}
+.billing .card .try-for-free {
+  background-color: rgb(83, 49, 156);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 0;
+  color: white;
+  text-decoration: none;
+}
+.card hr {
+  margin: 20px 0;
+  padding: 0;
+  width: 30%;
+  height: 1px;
+  background-color: rgb(230, 225, 225);
+  border-radius: 20px;
+}
