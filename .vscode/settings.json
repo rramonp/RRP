@@ -1,4 +1,7 @@
 {
   "workbench.editor.wrapTabs": true,
-  "editor.linkedEditing": true
+  "editor.linkedEditing": true,
+  "editor.formatOnSave": true,
+  "diffEditor.wordWrap": "inherit",
+  "editor.wordWrap": "on"
 }

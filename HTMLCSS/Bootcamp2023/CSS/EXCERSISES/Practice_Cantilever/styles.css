@@ -1,60 +1,96 @@
 .container {
-    width: 60%;
-    margin-top: 150px;
-    margin-left: 50px;
+  width: 60%;
 }
 body {
-    font-family: 'Space Mono', monospace;
-    background-color: #fdf9fd;
+  font-family: "Space Mono", monospace;
+  background-color: #fdf9fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
 }
 h1 {
-    font-size: 45px;
-    letter-spacing: 0.1px;
-    line-height: 1;
-    font-weight: 550;
+  font-size: 45px;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  font-weight: 550;
 }
 p {
-    font-size: 10px;
-    font-weight: bold;
+  font-size: 10px;
+  font-weight: bold;
 }
 h2 {
-    font-size: 25px;
-    font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
 }
 .artists {
-    text-transform: uppercase;
-    display:inline-block;
-    width: 30%;
-    text-shadow: 0 -2.25px #0c2ffb, 
-                 0 -5.5px #2cfcd2,
-                 0 3.25px #fb203d,
-                 0 6.5px #fefc41; 
+  text-transform: uppercase;
+  display: inline-block;
+  width: 30%;
+  text-shadow: 0 -2.25px #0c2ffb, 0 -5.5px #2cfcd2, 0 3.25px #fb203d,
+    0 6.5px #fefc41;
 }
 .wordspecial1 {
-    text-decoration: underline;
-    text-decoration-color: gold;
-    color: rgb(87, 171, 235);
-    text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: gold;
+  color: rgb(87, 171, 235);
+  text-transform: uppercase;
 }
 .mylist {
-    padding: 0;
-    margin: 0;
-    margin-top:  20px;
-    width: 300px;
-    font-size: 20px;
-    font: 20px 'Space Mono', monospace;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  width: 300px;
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
 }
 .mylist li {
-    list-style: upper-roman;
-    list-style-position: inside;
-    text-align: left;
-    line-height: 1.7;
+  list-style: upper-roman;
+  list-style-position: inside;
+  text-align: left;
+  line-height: 1.7;
 }
 .mylist a {
-    color: orange;
-    text-decoration: none;
+  color: orange;
+  text-decoration: none;
 }
 .mylist a:hover {
-    text-decoration: underline;
-    color: orange;
+  text-decoration: underline;
+  color: orange;
+}
+@media only screen and (max-width: 1700px) {
+  div {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 2 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  div {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 7px;
+  }
+  .mylist a {
+    font-size: 15px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
