@@ -20,11 +20,13 @@ body {
   font-size: 30px;
   display: flex;
   margin-right: 30px;
+  flex-wrap: wrap;
 }
 .toplinks {
   display: flex;
   font-size: 20px;
   justify-content: left;
+  align-items: center;
 }
 .toplinks li {
   list-style: none;
@@ -46,18 +48,25 @@ body {
 
 /* GALLERY */
 .gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .item {
   margin-bottom: 30px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .item img {
-  width: 95%;
+  width: 90%;
+  margin: 0 10px 0 10px;
   max-height: 500px;
-  object-fit: cover;
+  object-fit: contain;
   box-sizing: border-box;
   -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.17);
@@ -66,6 +75,8 @@ body {
 .item p {
   font-size: 18px;
   font-weight: bold;
+  margin: 10px;
+  flex: 1 1 100%;
 }
 /* PHRASE */
 .phrase {
@@ -87,4 +98,30 @@ body {
   color: black;
   text-underline-offset: 10px;
   font-weight: bold;
+}
+@media screen and (min-width: 800px) {
+  .item img {
+    width: 40%;
+    flex: 1 1 45%;
+  }
+  .item {
+    flex: 1 1 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar .name {
+    font-size: 15px;
+    text-align: center;
+  }
+  .navbar .toplinks a {
+    font-size: 15px;
+    text-align: center;
+  }
+  .item img {
+    width: 40%;
+    flex: 1 1 45%;
+  }
+  .item {
+    flex: 1 1 45%;
+  }
 }
