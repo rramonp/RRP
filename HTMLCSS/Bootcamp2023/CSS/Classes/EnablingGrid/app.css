@@ -1,0 +1,22 @@
+.container {
+  height: 700px;
+  width: 700px;
+  margin: 200px auto;
+  background-color: rgb(0, 255, 0);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+  display: grid;
+  grid-template-columns: [columna1-start] 1fr [columna-1-end columna2-start] 1fr;
+  grid-template-rows: [fila1-start] 1fr [fila1-end fila2-start] 1fr;
+}
+
+.box {
+  color: white;
+  font-size: 1.7rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special {
+}
