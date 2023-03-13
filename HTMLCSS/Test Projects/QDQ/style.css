@@ -44,16 +44,21 @@ header p {
   /* border: 5px solid rgb(211, 42, 202); */
   display: flex;
   margin-bottom: 30px;
+  transition: all 0.2s;
 }
 /* SIDE MENU */
 .menu {
-  min-width: auto;
   flex-basis: 25%;
   height: 100vh;
   /* border: 5px solid rgb(213, 226, 32); */
   transition: all 0.2s;
   margin: 0 20px;
   position: relative;
+}
+.fa-solid,
+.fa-brands {
+  color: white;
+  margin-right: 7px;
 }
 .menu ul {
   display: flex;
@@ -87,9 +92,7 @@ header p {
     rgb(6, 67, 153) 43%,
     rgb(33, 15, 196) 100%
   );
-  text-decoration: underline;
   color: white;
-  text-underline-offset: 5px;
 }
 .menu ul li a {
   text-decoration: none;
@@ -110,6 +113,7 @@ header p {
   /* border: 5px solid rgb(115, 255, 0); */
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   width: 100%;
   justify-content: center;
   gap: 2rem;
@@ -121,7 +125,6 @@ header p {
   /* border: 5px solid rgb(211, 42, 42); */
   display: flex;
   flex-direction: column;
-  flex-grow: 999;
   height: 410px;
   min-width: 330px;
   max-width: 330px;
@@ -159,6 +162,36 @@ header p {
   text-justify: auto;
   height: auto;
 }
+
+@media only screen and (max-width: 1399px) {
+}
+@media only screen and (max-width: 1300px) {
+  .gallery {
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .logo {
+    visibility: hidden;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .menu {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 370px;
+  }
+  .card {
+    min-width: 390px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  .gallery {
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 670px) {
   .container {
     flex-direction: column;
@@ -166,10 +199,10 @@ header p {
   }
   .menu {
     height: auto;
+    flex: 1;
   }
   .menu ul li {
-    width: 265px;
-    min-width: 265px;
+    width: 100%;
   }
   header {
     min-width: 429px;
@@ -178,6 +211,7 @@ header p {
     font-size: 1.3rem;
   }
 }
+
 @media only screen and (max-width: 550px) {
   header p {
     font-size: 1.4rem;
@@ -200,15 +234,5 @@ header p {
   .gallery {
     justify-content: center;
     align-items: center;
-  }
-}
-@media only screen and (max-width: 1399px) {
-  .logo {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .gallery {
-    gap: 3rem;
   }
 }
