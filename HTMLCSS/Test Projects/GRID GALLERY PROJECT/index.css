@@ -3,50 +3,100 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Kanit", sans-serif;
+}
+body * a {
+  text-decoration: none;
 }
 /* TOP NAV BAR */
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 50px 100px;
 }
+/* TOP NAV BAR LEFT */
 .header .top-menu-left {
   display: flex;
   align-items: center;
-  flex: 30%;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.top-menu-left h1 {
+  font-size: clamp(2rem, 1.5rem, 1rem);
+  padding: 0;
+  margin: 0;
+}
+.box-logo-left {
+  border-radius: 30%;
+  box-shadow: 5px 5px 5px rgb(212, 209, 209);
+}
+.box-logo-left p {
+  padding: 1.5px 10px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .header .top-menu-right {
   display: flex;
-  justify-content: space-between;
-  flex: 30%;
+  justify-content: flex-end;
   font-size: 1.3rem;
-}
-.header .top-menu-right {
   list-style: none;
+  gap: 4rem;
 }
+.header .top-menu-right a {
+  color: black;
+}
+.header .top-menu-right a:hover {
+  text-decoration: underline;
+}
+
 /* GALLERY */
 .gallery-container {
   padding: 0 100px;
   display: grid;
   width: calc(100% - 200px);
-  height: 100vh;
-  grid-template-areas:
-    "column-left column-middle column-right"
-    "column-left column-middle column-right"
-    "column-left column-middle column-right";
-  gap: 10px;
+  min-height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  gap: 20px;
 }
 .gallery-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
-.left {
-  grid-area: column-left;
+.gallery-container img:hover {
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+.gallery-container .imgright {
+  /* grid-column-start: span 2; */
+}
+.gallery-container .imgdown {
+  /* grid-row-start: span 2; */
 }
 /* FOOTER */
 .footer {
+  display: block;
   text-align: center;
+}
+
+@media only screen and (max-width: 690px) {
+  header {
+    padding: 0 40px;
+  }
+  .top-menu-left {
+    margin: 0 auto;
+  }
+  .gallery-container {
+    width: 100%;
+    padding: 0 10px;
+    gap: 0;
+  }
+  .gallery-container img {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+  }
 }
