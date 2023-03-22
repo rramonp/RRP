@@ -14,19 +14,20 @@ body * a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px;
+  width: 90%;
+  margin: 20px auto;
 }
 /* TOP NAV BAR LEFT */
 .header .top-menu-left {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 2rem;
 }
 .top-menu-left h1 {
-  font-size: clamp(2rem, 1.5rem, 1rem);
+  font-size: 2.2em;
   padding: 0;
   margin: 0;
+  font-weight: 500;
 }
 .box-logo-left {
   border-radius: 30%;
@@ -39,8 +40,7 @@ body * a {
 }
 .header .top-menu-right {
   display: flex;
-  justify-content: flex-end;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   list-style: none;
   gap: 4rem;
 }
@@ -69,7 +69,7 @@ body * a {
   height: 100%;
   z-index: 999;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   margin: 0;
   opacity: 0;
   transition: opacity 0.1s;
@@ -80,19 +80,30 @@ body * a {
   color: antiquewhite;
   text-shadow: 1px 1px 1px black;
 }
+.overlay-black {
+  color: black;
+}
+.overlay-black:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px rgb(250, 249, 249);
+}
 /* GALLERY */
 .gallery-container {
-  padding: 0 100px;
   display: grid;
-  width: calc(100% - 200px);
-  height: 100vh;
-  gap: 20px;
-  /* grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); */
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  gap: 16px;
   grid-template-areas:
     "eth eth alphabet"
-    "astro cube cup"
-    "astro foam insta"
-    "traveler dimensional dimensional";
+    "eth eth traveler"
+    "astro cube traveler"
+    "cup insta insta"
+    "cup insta insta"
+    "foam foam dimensional"
+    "foam foam dimensional";
 }
 #eth {
   grid-area: eth;
@@ -126,30 +137,81 @@ body * a {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+  box-shadow: 4px 4px 5px rgb(230, 228, 228);
 }
 
 /* FOOTER */
 .footer {
   display: flex;
-  justify-content: flex-end;
-  text-align: center;
+  justify-content: center;
+  text-align: flex-end;
+  font-size: 1.3em;
+  margin: 0 20px;
 }
 
-@media only screen and (max-width: 690px) {
-  header {
-    padding: 0 40px;
-  }
-  .top-menu-left {
-    margin: 0 auto;
-  }
+@media only screen and (max-width: 1133px) {
   .gallery-container {
-    width: 100%;
-    padding: 0 10px;
-    gap: 0;
+    max-width: 95%;
+    grid-template-areas:
+      "eth eth"
+      "alphabet traveler"
+      "astro cube"
+      "insta insta"
+      "cup foam"
+      "dimensional dimensional";
+    margin: 0 20px;
   }
-  .gallery-container img {
-    height: 90%;
-    width: 90%;
-    margin: auto;
+  .header {
+    margin: 20px 0 0 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-menu-left h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+  }
+  .header .top-menu-left {
+    justify-content: center;
+    margin-left: 50px;
+  }
+  .box-logo-left p {
+    padding: 1.5px 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+  .header .top-menu-right {
+    justify-content: center;
+    display: flex;
+    font-size: 1.3rem;
+    list-style: none;
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .gallery-container {
+    grid-template-areas:
+      "eth eth"
+      "alphabet alphabet"
+      "traveler traveler"
+      "astro cube"
+      "insta insta"
+      "cup cup"
+      "foam foam"
+      "dimensional dimensional";
+  }
+  .overlay {
+    font-size: 20px;
+  }
+  .header .top-menu-right {
+    gap: 2rem;
+    align-items: center;
+  }
+  .footer {
+    font-size: 1em;
   }
 }
